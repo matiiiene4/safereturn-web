@@ -10,6 +10,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-playfair);
+
+  /* SafeReturn brand palette */
+  --color-navy: #1c2b52;
+  --color-navy-deep: #141f3d;
+  --color-cream: #e8dfc8;
+  --color-brown: #6b4a35;
+  --color-celeste: #4fc3ec;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +31,83 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee-scroll 40s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Alternating color bands per section */
+.band-navy {
+  background: var(--color-navy-deep);
+  color: var(--color-cream);
+  position: relative;
+}
+
+.band-cream {
+  background: var(--color-cream);
+  color: var(--color-navy-deep);
+  position: relative;
+}
+
+/* Soft fade at the top edge of each band, so the color change doesn't feel like a hard cut */
+.band-navy::before,
+.band-cream::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.band-cream::before {
+  background: linear-gradient(to bottom, var(--color-navy-deep), transparent);
+}
+
+.band-navy::before {
+  background: linear-gradient(to bottom, var(--color-cream), transparent);
+}
+
+/* Re-tone text/card utilities so they read correctly on a light (cream) band */
+.band-cream .text-cream,
+.band-cream .text-cream\/90,
+.band-cream .text-cream\/80,
+.band-cream .text-cream\/70,
+.band-cream .text-cream\/60,
+.band-cream .text-cream\/50 {
+  color: var(--color-navy-deep);
+}
+.band-cream .text-cream\/90 { opacity: 0.9; }
+.band-cream .text-cream\/80 { opacity: 0.85; }
+.band-cream .text-cream\/70 { opacity: 0.75; }
+.band-cream .text-cream\/60 { opacity: 0.65; }
+.band-cream .text-cream\/50 { opacity: 0.55; }
+
+.band-cream .bg-navy\/60,
+.band-cream .bg-navy\/50 {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.band-cream .border-cream\/10,
+.band-cream .border-cream\/15 {
+  border-color: rgba(20, 31, 61, 0.12);
+}
+
+.band-cream .text-celeste {
+  color: var(--color-brown);
+}
+.band-cream .border-celeste\/40 {
+  border-color: rgba(107, 74, 53, 0.45);
 }
