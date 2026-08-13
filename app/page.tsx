@@ -542,14 +542,16 @@ export default function Home() {
             Revisa algunos centros de eventos donde cubrimos servicio habitualmente.
           </p>
           <div className="mx-auto mt-8 max-w-4xl overflow-hidden rounded-2xl border border-cream/10 shadow-lg shadow-black/40">
-            <iframe
-              src="https://www.google.com/maps/d/embed?mid=1HghouniaL5IbJUnvgduxJ1BCjgnZd7Y"
-              width="100%"
-              height="480"
-              style={{ border: 0, display: "block" }}
-              loading="lazy"
-              title="Centros de eventos SafeReturn"
-            />
+            <div className="relative overflow-hidden" style={{ height: 480 }}>
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1HghouniaL5IbJUnvgduxJ1BCjgnZd7Y"
+                width="100%"
+                height="556"
+                style={{ border: 0, display: "block", marginTop: -76 }}
+                loading="lazy"
+                title="Centros de eventos SafeReturn"
+              />
+            </div>
           </div>
           <p className="mt-4 text-center text-sm text-cream/60">
             ¿No aparece el lugar de tu evento? No te preocupes, cuéntanos desde dónde
