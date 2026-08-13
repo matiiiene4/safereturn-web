@@ -767,8 +767,8 @@ export default function Home() {
         </div>
 
 {/* CONTACTO / FOOTER */}
-        <section id="contacto" className="mt-20 bg-navy-deep">
-          <div className="grid gap-10 border-t border-cream/10 pt-10 md:grid-cols-4">
+        <section id="contacto" className="mt-20 bg-navy-deep px-4 md:px-6">
+          <div className="mx-auto max-w-6xl grid gap-10 border-t border-cream/10 pt-10 md:grid-cols-4">
             {/* Logo + descripción */}
             <div className="md:col-span-1">
               <div className="flex items-center gap-3">
