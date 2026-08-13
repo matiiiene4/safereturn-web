@@ -101,7 +101,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-navy-deep text-cream">
+    <main className="min-h-screen text-cream">
       {/* HERO BACKGROUND */}
       <div className="fixed inset-0 -z-10">
         <Image
@@ -767,7 +767,7 @@ export default function Home() {
         </div>
 
 {/* CONTACTO / FOOTER */}
-        <section id="contacto" className="mt-20">
+        <section id="contacto" className="mt-20 bg-navy-deep">
           <div className="grid gap-10 border-t border-cream/10 pt-10 md:grid-cols-4">
             {/* Logo + descripción */}
             <div className="md:col-span-1">
