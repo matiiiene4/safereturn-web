@@ -317,7 +317,7 @@ export default function Home() {
             </div>
 
             {/* Paso 1: Nos escribes */}
-            <div className="rounded-2xl border border-cream/10 bg-navy/50 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="rounded-2xl border border-cream/10 bg-navy/50 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="mx-auto mb-3 h-7 w-7 text-celeste">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 5.5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9l-4 3.2V17.5H4a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1Z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M7 9.5h10M7 12.5h6" />
@@ -327,7 +327,7 @@ export default function Home() {
             </div>
 
             {/* Paso 2: Asignamos conductor */}
-            <div className="rounded-2xl border border-cream/10 bg-navy/50 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="rounded-2xl border border-cream/10 bg-navy/50 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="mx-auto mb-3 h-7 w-7 text-celeste">
                 <circle cx="12" cy="12" r="7.5" />
                 <circle cx="12" cy="12" r="2" />
@@ -338,7 +338,7 @@ export default function Home() {
             </div>
 
             {/* Paso 3: Planificamos */}
-            <div className="rounded-2xl border border-cream/10 bg-navy/50 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="rounded-2xl border border-cream/10 bg-navy/50 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="mx-auto mb-3 h-7 w-7 text-celeste">
                 <rect x="4" y="5" width="16" height="15" rx="1.5" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 9.5h16M8 3v3M16 3v3" />
@@ -349,7 +349,7 @@ export default function Home() {
             </div>
 
             {/* Paso 4: Llegas tranquilo */}
-            <div className="rounded-2xl border border-cream/10 bg-navy/50 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="rounded-2xl border border-cream/10 bg-navy/50 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="mx-auto mb-3 h-7 w-7 text-celeste">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 21s-6.5-5.6-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.4-6.5 11-6.5 11Z" />
                 <circle cx="12" cy="10" r="2.3" />
@@ -377,7 +377,7 @@ export default function Home() {
 
           <div className="mt-10 grid gap-6 md:grid-cols-3 items-stretch">
             {/* Conducción de reemplazo */}
-            <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream/10 bg-navy/60 shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream/10 bg-navy/60 shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <div className="relative h-44 w-full overflow-hidden">
                 <Image
                   src="/servicio-reemplazo.jpg"
@@ -409,7 +409,7 @@ export default function Home() {
             </div>
 
             {/* Viajes privados */}
-            <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream/10 bg-navy/60 shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream/10 bg-navy/60 shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <div className="relative h-44 w-full overflow-hidden">
                 <Image
                   src="/servicio-privado.jpg"
@@ -441,7 +441,7 @@ export default function Home() {
             </div>
 
             {/* Traslado a aeropuerto */}
-            <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream/10 bg-navy/60 shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream/10 bg-navy/60 shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <div className="relative h-44 w-full overflow-hidden">
                 <Image
                   src="/servicio-aeropuerto.jpg"
@@ -491,7 +491,7 @@ export default function Home() {
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-4">
-            <div className="rounded-2xl border border-cream/10 bg-navy/60 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="rounded-2xl border border-cream/10 bg-navy/60 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="mx-auto mb-4 h-7 w-7 text-celeste">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.5l2 2 4-4.5" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 3.5c2.2 1.4 4 1.9 6.5 1.9 0 8-3 11.5-6.5 13.1-3.5-1.6-6.5-5.1-6.5-13.1 2.5 0 4.3-.5 6.5-1.9Z" />
@@ -499,7 +499,7 @@ export default function Home() {
               <h3 className="text-base font-semibold md:text-lg">Conductores evaluados</h3>
               <p className="mt-2 text-sm text-cream/70">Documentos, experiencia y perfil revisados antes de cada asignación.</p>
             </div>
-            <div className="rounded-2xl border border-cream/10 bg-navy/60 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="rounded-2xl border border-cream/10 bg-navy/60 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="mx-auto mb-4 h-7 w-7 text-celeste">
                 <circle cx="12" cy="12" r="8" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5V12l3 2" />
@@ -507,7 +507,7 @@ export default function Home() {
               <h3 className="text-base font-semibold md:text-lg">Puntualidad real</h3>
               <p className="mt-2 text-sm text-cream/70">Coordinamos con anticipación para respetar tu horario.</p>
             </div>
-            <div className="rounded-2xl border border-cream/10 bg-navy/60 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="rounded-2xl border border-cream/10 bg-navy/60 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="mx-auto mb-4 h-7 w-7 text-celeste">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v-3.2c0-.5.2-1 .55-1.35l1.5-1.5c.3-.3.7-.45 1.1-.45h9.7c.4 0 .8.15 1.1.45l1.5 1.5c.35.35.55.85.55 1.35V16" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.5 16h17a.5.5 0 0 1 .5.5v1a1 1 0 0 1-1 1h-1v.75a.75.75 0 0 1-.75.75h-.5a.75.75 0 0 1-.75-.75V18.5H7v.75a.75.75 0 0 1-.75.75h-.5a.75.75 0 0 1-.75-.75V18.5H4a1 1 0 0 1-1-1v-1a.5.5 0 0 1 .5-.5Z" />
@@ -516,7 +516,7 @@ export default function Home() {
               <h3 className="text-base font-semibold md:text-lg">Cuidado del vehículo</h3>
               <p className="mt-2 text-sm text-cream/70">Manejamos tu auto con el mismo respeto que el propio.</p>
             </div>
-            <div className="rounded-2xl border border-cream/10 bg-navy/60 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+            <div className="rounded-2xl border border-cream/10 bg-navy/60 p-5 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="mx-auto mb-4 h-7 w-7 text-celeste">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 5.5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9l-4 3.2V17.5H4a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1Z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M7 9.5h10M7 12.5h6" />
@@ -590,7 +590,7 @@ export default function Home() {
               {[...reviews, ...reviews].map((review, idx) => (
                 <div
                   key={idx}
-                  className="w-72 flex-shrink-0 rounded-2xl border border-cream/10 bg-cream/95 p-5 text-navy-deep shadow-lg shadow-black/30 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.35)]"
+                  className="w-72 flex-shrink-0 rounded-2xl border border-cream/10 bg-cream/95 p-5 text-navy-deep shadow-lg shadow-black/30 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.35)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.35)]"
                 >
                   <div className="text-sm text-amber-500">★★★★★</div>
                   <p className="mt-3 text-sm leading-relaxed text-navy-deep/85">
@@ -745,7 +745,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
 {/* TÉRMINOS Y CONDICIONES */}
         <section id="terminos">
-          <div className="mx-auto max-w-2xl rounded-3xl border border-cream/10 bg-navy/60 p-10 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
+          <div className="mx-auto max-w-2xl rounded-3xl border border-cream/10 bg-navy/60 p-10 text-center shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]">
             <h2 className="text-2xl font-bold md:text-3xl">
               Términos y condiciones
             </h2>
