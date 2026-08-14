@@ -86,7 +86,7 @@ const faqItems = [
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
-  const [openAbout, setOpenAbout] = useState<boolean>(true);
+  const [openQuienes, setOpenQuienes] = useState<boolean[]>([false, false, false, false]);
 
   const handleWhatsAppClick = () => {
     const text = encodeURIComponent("Hola SafeReturn 👋, quiero cotizar un traslado.");
@@ -622,7 +622,7 @@ export default function Home() {
 
         <div className="band-navy">
           <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
-{/* QUIÉNES SOMOS (ACORDEÓN) */}
+{/* QUIÉNES SOMOS (TARJETAS CIRCULARES) */}
         <section id="quienes-somos">
           <h2 className="font-serif text-center text-3xl font-bold md:text-4xl">¿Quiénes somos?</h2>
           <p className="mt-2 text-center text-cream/70">
@@ -630,61 +630,107 @@ export default function Home() {
             seguridad y tranquilidad.
           </p>
 
-          <div className="mx-auto mt-8 max-w-4xl">
-            <button
-              onClick={() => setOpenAbout((prev) => !prev)}
-              className="flex w-full items-center justify-between rounded-2xl border border-cream/10 bg-navy/60 px-6 py-4 text-left shadow-lg shadow-black/40"
-            >
-              <span className="text-lg font-semibold">
-                Nuestra historia, propósito y forma de trabajar
-              </span>
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.2"
-                className={cn(
-                  "h-5 w-5 flex-shrink-0 text-celeste transition-transform duration-300",
-                  openAbout && "rotate-180"
-                )}
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
-              </svg>
-            </button>
-            {openAbout && (
-              <div className="mt-3 rounded-2xl border border-cream/10 bg-navy/60 px-6 py-5 text-sm leading-relaxed text-cream/80 shadow-lg shadow-black/40 text-justify">
-                <p>
-                  SafeReturn nace de una necesidad muy concreta: poder disfrutar de
-                  matrimonios, cenas, celebraciones y eventos sin tener que preocuparse
-                  por quién va a manejar de regreso. Vimos que muchas personas optaban
-                  por no llevar su auto o se arriesgaban a manejar cansados, y quisimos
-                  ofrecer una alternativa segura, responsable y cercana.
-                </p>
-                <p className="mt-3">
-                  Nuestro foco es el servicio de conducción de reemplazo y traslados
-                  privados coordinados, con atención personalizada a través de WhatsApp.
-                  Cada solicitud se revisa caso a caso, buscando entregar una experiencia
-                  clara, puntual y humana, no un trámite más.
-                </p>
-                <p className="mt-3">
-                  Detrás de SafeReturn hay un equipo que entiende lo importante que es la
-                  confianza en este tipo de servicio: alguien va a manejar tu auto, con tu
-                  familia o tus invitados dentro. Por eso ponemos especial cuidado en quién
-                  forma parte de nuestro equipo de conductores, y en que cada detalle del
-                  proceso, desde el primer mensaje hasta que llegas a casa, se sienta
-                  cuidado.
-                </p>
-                <p className="mt-3">
-                  SafeReturn es liderada por{" "}
-                  <span className="font-semibold text-cream">Matías Nicolás Naranjo Luna</span>,
-                  fundador y CEO de la empresa, quien impulsó este proyecto a partir de una
-                  convicción simple: la seguridad y la tranquilidad no deberían ser un lujo,
-                  sino parte natural de cualquier salida. SafeReturn opera bajo la razón
-                  social Matías Nicolás Naranjo Luna Transporte y Servicios E.I.R.L., RUT
-                  78.469.724-K, con domicilio en Santiago, Chile.
-                </p>
-              </div>
-            )}
+          <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
+            {[
+              {
+                title: "Historia",
+                img: "/quienes-historia.jpg",
+                alt: "Matías Naranjo, fundador de SafeReturn",
+                text: (
+                  <>
+                    Esta historia comienza con{" "}
+                    <span className="font-semibold text-cream">Matías Nicolás Naranjo Luna</span>,
+                    fundador de SafeReturn (Matías Nicolás Naranjo Luna Transporte y
+                    Servicios E.I.R.L., RUT 78.469.724-K, Santiago, Chile). Todo partió
+                    después de mucho tiempo manejando: trabajó en otras empresas de
+                    conducción de reemplazo, en reparto de pedidos e incluso en aplicaciones
+                    de transporte. Esa experiencia le permitió conocer de cerca cómo
+                    funciona este tipo de servicio, y de ahí nació la idea de reunir todo lo
+                    aprendido en el camino para construir un proyecto propio, con atención
+                    cercana y cada detalle cuidado, desde el primer mensaje hasta que el
+                    cliente llega a casa.
+                  </>
+                ),
+              },
+              {
+                title: "Propósito",
+                img: "/quienes-proposito.jpg",
+                alt: "Pasajera tranquila siendo trasladada",
+                text: (
+                  <>
+                    Poder disfrutar de matrimonios, cenas, celebraciones y eventos sin tener
+                    que preocuparse por quién va a manejar de regreso. La seguridad y la
+                    tranquilidad no deberían ser un lujo, sino parte natural de cualquier
+                    salida: esa es la convicción que impulsa SafeReturn desde el primer día.
+                  </>
+                ),
+              },
+              {
+                title: "Forma de trabajar",
+                img: "/quienes-forma-trabajo.jpg",
+                alt: "Coordinación de ruta por celular",
+                text: (
+                  <>
+                    Nuestro foco es el servicio de conducción de reemplazo y traslados
+                    privados coordinados, con atención personalizada a través de WhatsApp.
+                    Cada solicitud se revisa caso a caso, buscando entregar una experiencia
+                    clara, puntual y humana, no un trámite más.
+                  </>
+                ),
+              },
+              {
+                title: "Valores",
+                img: "/quienes-valores.jpg",
+                alt: "Apretón de manos representando confianza",
+                text: (
+                  <>
+                    Detrás de SafeReturn hay un equipo que entiende lo importante que es la
+                    confianza en este tipo de servicio: alguien va a manejar tu auto, con tu
+                    familia o tus invitados dentro. Por eso ponemos especial cuidado en
+                    quién forma parte de nuestro equipo de conductores, y en que cada
+                    detalle del proceso se sienta cuidado.
+                  </>
+                ),
+              },
+            ].map((card, idx) => {
+              const isOpen = openQuienes[idx];
+              return (
+                <div
+                  key={idx}
+                  className="flex flex-col items-center text-center rounded-2xl border border-cream/10 bg-navy/60 p-5 shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:border-celeste/50 hover:shadow-[0_0_45px_rgba(79,195,236,0.2)] active:-translate-y-1 active:border-celeste/50 active:shadow-[0_0_45px_rgba(79,195,236,0.2)]"
+                >
+                  <div className="relative h-28 w-28 overflow-hidden rounded-full border-2 border-celeste/40 md:h-32 md:w-32">
+                    <Image src={card.img} alt={card.alt} fill className="object-cover" sizes="128px" />
+                  </div>
+                  <h3 className="mt-4 font-serif text-lg font-semibold text-white">{card.title}</h3>
+                  <button
+                    onClick={() =>
+                      setOpenQuienes((prev) => prev.map((v, i) => (i === idx ? !v : v)))
+                    }
+                    className="mt-2 flex items-center justify-center"
+                    aria-label={`Mostrar más sobre ${card.title}`}
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.2"
+                      className={cn(
+                        "h-5 w-5 text-celeste transition-transform duration-300",
+                        isOpen && "rotate-180"
+                      )}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  {isOpen && (
+                    <p className="mt-2 text-xs leading-relaxed text-cream/70 text-justify md:text-sm">
+                      {card.text}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </section>
 
